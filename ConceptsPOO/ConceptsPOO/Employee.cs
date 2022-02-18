@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConceptsPOO
 {
-    public abstract class Employee
+    public abstract class Employee : IPay
     {
         public int Id { get; set; }
 
@@ -27,7 +27,7 @@ namespace ConceptsPOO
             return $"{Id} - {FirstName} {LastName}, " +
                 $"Birth: {BirthDate}, " +
                 $"Hiring: {HiringDate}, " +
-                $"Is Active: {IsActive}";
+                $"Is active: {IsActive}";
         }
 
 

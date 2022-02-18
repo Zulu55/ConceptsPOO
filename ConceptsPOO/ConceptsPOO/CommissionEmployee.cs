@@ -16,12 +16,13 @@ namespace ConceptsPOO
         {
             return Sales * (decimal)CommissionPercentaje;
         }
+
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"\n\tCommission..: {$"{CommissionPercentaje:P2}", 15}" +
-                $"\n\tSales.......: {$"{Sales:C2}", 15}" +
-                $"\n\tValue to pay: {$"{GetValueToPay():C2}", 15}";
+                $"\n\tCommission percentaje: {$"{CommissionPercentaje:P2}", 18}" +
+                $"\n\tSales................: {$"{Sales:C2}", 18}" +
+                $"\n\tValue to pay.........: {$"{GetValueToPay():C2}", 18}";
         }
     }
 }
