@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConceptsPOO
+﻿namespace ConceptsPOO
 {
-    public abstract class Employee
+    public abstract class Employee : IPay
     {
         public int Id { get; set; }
 

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConceptsPOO
+﻿namespace ConceptsPOO
 {
     public class Date
     {
-        private int _year;
-        private int _month;
-        private int _day;
+        private readonly int _year;
+        private readonly int _month;
+        private readonly int _day;
 
         public Date(int year, int month, int day)
         {
